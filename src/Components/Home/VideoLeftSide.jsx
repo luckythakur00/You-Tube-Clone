@@ -71,48 +71,6 @@ function VideoLeftSide() {
                                 </div>
                                 <div className='skeleton h-8 w-40 rounded-md mr-4' ></div>
                             </div>
-
-
-                            {/* Comments for reponsive website */}
-                            {/* <div className='min-h-10 visible md:invisible pl-2 ' >
-                                {
-                                    comments ?
-                                        <div onClick={() => setComments(false)} >
-                                            <h1 className='font-bold' >{viewCount(videoDetail?.stats?.comments)} Comments</h1>
-                                            <div>
-                                                {
-                                                    // allComments?.map((value, ind) => (
-                                                    Array(5).fill('').map((_, ind) => (
-                                                        <div key={ind} className='flex mt-5 ' >
-                                                            <img className='h-10 w-10 bg-white rounded-full' src={user} alt="" />
-                                                            <div className='w-11/12 pl-3' >
-                                                                <h1 className='text-sm font-bold ' >@kucslkenj<span className='text-gray-500 text-xs pl-1 font-semibold '>2 days ago</span> </h1>
-                                                                <h1 className='py-2' >Mr Beast</h1>
-                                                                <div className='flex items-center' >
-                                                                    <div className='flex items-center cursor-pointer' >
-                                                                        <AiFillLike className='text-lg' />
-                                                                        <p className='text-sm text-gray-300 font-semibold ml-1 '>44</p>
-                                                                    </div>
-                                                                    <AiFillDislike className='text-lg mx-4 flex mt-1 cursor-pointer' />
-                                                                    <h1 className='text-sm cursor-pointer'>Reply</h1>
-                                                                </div>
-                                                            </div>
-                                                            <h1 className='text-2xl px-2' >:</h1>
-                                                        </div>
-                                                    ))
-                                                }
-                                            </div>
-                                        </div>
-                                        :
-                                        <div onClick={() => setComments(true)} className='ml-2 bg-gray-900 mx-2 rounded-lg p-2 cursor-pointer' >
-                                            <h1 className='font-bold' >1256 Comments</h1>
-                                            <div className='flex justify-start items-start mt-2' >
-                                                <img className='h-10 w-10 bg-white rounded-full mr-2' src={user} alt="" />
-                                                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, accusantium!</h1>
-                                            </div>
-                                        </div>
-                                }
-                            </div> */}
                         </div>
                         :
                         // This is for the real data of left side.
