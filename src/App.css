@@ -1,0 +1,30 @@
+/* Custom Scroller */
+::-webkit-scrollbar {
+    background-color: black;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(49, 49, 49);
+    border-radius: 1rem;
+}
+
+/* Hide Scroll bar */
+.hide-scrollbar {
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+/* Feed.jsx, Search.jsx, Video.jsx(left & right) */
+.skeleton {
+    background-image: linear-gradient(120deg, #7a7a7a 50%, #a7a7a7 60%, #a7a7a7 61%, #7a7a7a 70%);
+    background-size: 200%;
+    background-position: 100%;
+    animation: waves 1.5s linear infinite;
+}
+
+@keyframes waves {
+    100% {
+        background-position: -100%;
+    }
+}
