@@ -83,7 +83,7 @@ function VideoLeftSide() {
 
                             {/* Descriptino line for small screens. sm,md */}
                             <div className={`h-full w-full lg:h-0 visible lg:invisible pb-2 pl-2 lg:pl-0 cursor-pointer ${description ? 'flex-col' : ' flex-row'} flex justify-start items-start  text-gray-500`} >
-                                <h1 className='text-sm font-semibold pr-2'>44K views &bull; 2 days ago</h1>
+                                <h1 className='text-sm font-semibold pr-2'>{viewCount(videoDetail?.stats?.views)} &bull; {videoDetail?.publishedDate}</h1>
                                 <h1 className='text-sm '> {description ? videoDetail?.description : videoDetail?.description.slice(0, 20)} <span className='text-white' onClick={() => setDescription(!description)} >{description ? 'Show less' : '...more'}</span> </h1>
                             </div>
 
@@ -169,7 +169,6 @@ function VideoLeftSide() {
                                             <div>
                                                 {
                                                     allComments?.map((value, ind) => (
-                                                        // Array(5).fill('').map((_, ind) => (
                                                         <div key={ind} className='flex mt-5 ' >
                                                             <img className='h-10 w-10 bg-white rounded-full' src={value?.author?.avatar?.[0].url} alt="" />
                                                             <div className='w-11/12 pl-3' >
